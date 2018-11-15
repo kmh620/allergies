@@ -20,4 +20,8 @@ describe('allergy_check') do
   expect(allergy_check(255)).to(eq('cats, pollen, chocolate, tomatoes, strawberries, shellfish, peanuts, eggs'))
   end
 
+  it('returns false for numbers greater than allergies') do
+  expect(allergy_check(256)).to(eq(false))
+  end
+
 end
